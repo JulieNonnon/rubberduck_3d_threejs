@@ -2,7 +2,7 @@ import * as THREE from 'three'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
-// Utiliser un modèle .glb 🐤
+// Utiliser un modèle .gltf 🐤
 // exemple : https://polyhaven.com/fr/a/rubber_duck_toy
 
 // Setup basique Three.js
@@ -51,7 +51,7 @@ scene.add(ambientLight);
 const loader = new GLTFLoader();
 
 loader.load(
-  '/models/rubber_duck_toy_4k.gltf', 
+  'models/rubber_duck_toy_4k.gltf', 
   function (gltf) {
     const model = gltf.scene;
     
@@ -63,14 +63,14 @@ loader.load(
 
     // Charger la texture
     const textureLoader = new THREE.TextureLoader();
-    const texture = textureLoader.load('/models/rubber_duck_toy_4k.jpg', // Remplace par le nom de ta texture
+    const texture = textureLoader.load('models/rubber_duck_toy_4k.jpg', // Remplace par le nom de ta texture
       function (texture) {
         // Appliquer la texture au matériau du Mesh
-      const mesh = model.children[0]; // Supposant qu'il n'y a qu'un seul Mesh
-      mesh.material.map = texture; // Appliquer la texture
-      mesh.material.needsUpdate = true; // Indique à Three.js que le matériau a changé
-      console.log(mesh.material); // Inspecter le matériau
-      },
+        const mesh = model.children[0]; // Supposant qu'il n'y a qu'un seul Mesh
+        mesh.material.map = texture; // Appliquer la texture
+        mesh.material.needsUpdate = true; // Indique à Three.js que le matériau a changé
+        console.log(mesh.material); // Inspecter le matériau
+        },
       undefined,
       function (error) {
         console.error('Erreur de chargement de la texture', error);
@@ -92,5 +92,3 @@ loader.load(
     console.error('Erreur de chargement du modèle', error);
   }
 );
-
-

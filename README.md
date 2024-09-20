@@ -1,7 +1,7 @@
 # Import d'un modèle 3D avec Three.js
 
 Test d'import du modèle 3D d'un canard en plastique, avec mise en place d'une skybox.
-Essai d'interation avec un controle orbital à la souris en plus d'une animation classique de rotation.
+Essai d'interaction avec un controle orbital à la souris en plus d'une animation classique de rotation.
 
 ## Modèle Canard en plastique
 https://polyhaven.com/fr/a/rubber_duck_toy
