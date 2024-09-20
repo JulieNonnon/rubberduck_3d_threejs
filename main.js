@@ -1,5 +1,6 @@
-import * as THREE from 'three'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
+// import * as THREE from 'three'
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.module.js';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 // Utiliser un modèle .gltf 🐤
@@ -44,7 +45,7 @@ light.position.set(1, 1, 1).normalize();
 scene.add(light);
 
 // Lumière ambiante supplémentaire
-const ambientLight = new THREE.AmbientLight(0xffffff, 1); 
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); 
 scene.add(ambientLight);
 
 // Charger le modèle GLTF/GLB
