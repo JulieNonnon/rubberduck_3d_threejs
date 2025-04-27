@@ -19,12 +19,12 @@ const controls = new OrbitControls( camera, renderer.domElement );
 // Ajout d'une Skybox
 const skyboxLoader = new THREE.CubeTextureLoader();
 const texture = skyboxLoader.load([
-  '/assets/images/px.jpg',  // Face droite
-  '/assets/images/nx.jpg',  // Face gauche
-  '/assets/images/py.jpg',  // Face haut
-  '/assets/images/ny.jpg',  // Face bas
-  '/assets/images/pz.jpg',  // Face avant
-  '/assets/images/nz.jpg'   // Face arrière
+  '/rubberduck_3d_threejs/assets/images/px.jpg',  // Face droite
+  '/rubberduck_3d_threejs/assets/images/nx.jpg',  // Face gauche
+  '/rubberduck_3d_threejs/assets/images/py.jpg',  // Face haut
+  '/rubberduck_3d_threejs/assets/images/ny.jpg',  // Face bas
+  '/rubberduck_3d_threejs/assets/images/pz.jpg',  // Face avant
+  '/rubberduck_3d_threejs/assets/images/nz.jpg'   // Face arrière
 ]);
 scene.background = texture;
 

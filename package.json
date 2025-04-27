@@ -1,5 +1,4 @@
 {
-  "homepage": "https://julienonnon.github.io/rubberduck_3d_threejs",
   "name": "3d_model_threejs",
   "scripts": {
     "dev": "vite",
